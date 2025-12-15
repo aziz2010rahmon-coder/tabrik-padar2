@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+  <meta charset="UTF-8">
+  <title>Табрик барои Падар - Фирдавс</title>
+  <!-- Подключаем красивый шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Great Vibes', cursive;
+      background-image: url('nature.jpg'); /* фон природы */
+      background-size: cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Анимации */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-100px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(100px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px white; }
+      50% { text-shadow: 0 0 20px yellow; }
+      100% { text-shadow: 0 0 5px white; }
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-top: 40px;
+      animation: fadeInDown 2s ease-out;
+    }
+    p {
+      font-size: 36px;
+      margin: 20px auto;
+      max-width: 900px;
+      line-height: 1.6;
+      animation: fadeInDown 3s ease-out;
+    }
+    .photos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px;
+    }
+    .photos img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px black;
+    }
+    .photos img:first-child {
+      animation: fadeInLeft 2.5s ease-out;
+    }
+    .photos img:last-child {
+      animation: fadeInRight 2.5s ease-out;
+    }
+    .poem {
+      font-size: 32px;
+      margin: 40px auto;
+      max-width: 800px;
+      font-style: italic;
+      line-height: 1.6;
+      animation: glow 3s infinite;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+    }
+    audio {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Падар Фирдавс!</h1>
+
+  <p>
+    Имрӯз ту ба синни 41 мерасӣ – ин як марҳилаи зебо ва пуршараф аст.  
+    Ман бо тамоми муҳаббат ва эҳтиром туро табрик мегӯям.  
+    Ту барои ман намунаи мардонагӣ, меҳрубонӣ ва устуворӣ ҳастӣ.  
+    Ҳар қадами зиндагии ту пур аз меҳр ба оила ва дӯстони худ аст.  
+    Орзу мекунам, ки солҳои ояндаат пур аз саломатӣ, хушбахтӣ ва комёбӣ бошад.  
+    Ҳар рӯзе, ки аз паси ҳам меояд, барои ту мисли гулҳои баҳор шукуфон гардад.  
+    Ҳамеша сарбаланд бошӣ ва бо муҳаббат зиндагӣ кунӣ.  
+    Бо ифтихор мегӯям: ман фарзанди ту ҳастам ва аз ин бахтмандам.  
+    Зодрӯзат муборак, падари азизам Фирдавс!
+  </p>
+
+  <div class="photos">
+    <img src="photo1.jpg" alt="Акс 1">
+    <img src="photo2.jpg" alt="Акс 2">
+  </div>
+
+  <div class="poem">
+    Фирдавс, падари меҳрубон,<br>
+    Зиндагӣ бо ту равшан аст ҳамон.<br>
+    41 сола шудӣ имрӯз,<br>
+    Хушбахтӣ бошад ҳамеша дар дӯз.<br><br>
+    Саломат бошӣ, дилат пур аз нур,<br>
+    Ҳар рӯзат гардад мисли баҳор пур.<br>
+    Зодрӯзат муборак, падари азиз,<br>
+    Бо муҳаббат мегӯям: ту беҳтарин!
+  </div>
+
+  <footer>
+    <!-- Музыка стартует сразу и повторяется -->
+    <audio autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Браузери шумо аудио дастгирӣ намекунад.
+    </audio>
+  </footer>
+</body>
+</html>
